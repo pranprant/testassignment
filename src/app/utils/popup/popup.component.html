@@ -1,0 +1,34 @@
+<span class="text-primary">USER INFORMATION</span>
+<hr>
+<small class="text-muted">User has been created successfully with the below details</small>
+<div mat-dialog-content class="popup">
+  <div class="row ">
+    <div class="col-md-6 col-sm-12 col-lg-6">
+      Username
+    </div>
+    <div class="col-md-6 col-sm-12 col-lg-6">
+      {{data.firstName+ ''+ data.lastName}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-sm-12 col-lg-6">
+      Phone
+    </div>
+    <div class="col-md-6 col-sm-12 col-lg-6">
+      {{data.phone}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-sm-12 col-lg-6">
+      Email
+    </div>
+    <div class="col-md-6 col-sm-12 col-lg-6">
+      {{data.email}}
+    </div>
+  </div>
+</div>
+<div class="form-row text-center mt-2">
+  <div class="col-12 ">
+      <button class="btn btn-success bigbutton" mat-dialog-close > ok</button>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+h5 {
+    color: #A8A8A8
+  }
+h4 {
+    color: #888888
+}
+.content { 
+    margin-top:   2%;
+    color: primary;
+ }
+ label .required { 
+    color:red;
+ }

@@ -1,0 +1,10 @@
+.mat-divider {
+    display: block;
+    margin: 0;
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: rgb(66, 136, 221);
+  }
+  nav {
+    padding-left: 0px;
+  }

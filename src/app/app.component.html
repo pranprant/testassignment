@@ -1,0 +1,92 @@
+<!-- <div class="row">
+  <div class="col-md-12 col-sm-12">
+    <nav class="navbar navbar-expand-sm ">
+      <a class="navbar-brand">
+        <img class="img-responsive" src="../assets/images/logo.png" alt="logo">
+      </a>
+    </nav>
+    <hr>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 col-sm-12">
+    <h5 class="">MEDLINE.COM</h5>
+    <h4 class="text-secondary">Account Registration</h4>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 col-sm-12 col-lg-12">
+    <div class="alert alert-danger" *ngIf="submitted && userInformationForm.invalid">
+      Please review errors
+    </div>
+  </div>
+</div>
+<div class="row content">
+
+  <div class="col-md-12 col-sm-12">
+    <span class="text-primary">USER INFORMATION</span>
+  </div>
+</div>
+<hr>
+
+<div class="content">
+  <form [formGroup]="userInformationForm" (ngSubmit)="onSubmit()">
+    <div class="form-row">
+      <div class="col-md-6 col-lg-6 col-sm-12 form-group">
+        <label for="inputError">First Name  <span class="required">*</span></label>
+        <input type="text" class="form-control" formControlName="firstName"
+          [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }">
+        <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+          <small *ngIf="f.firstName.errors.required">First Name is required field</small>
+        </div>
+
+      </div>
+      <div class="col-md-6 col-lg-6 col-sm-12 form-group">
+        <label>Last Name <span class="required">*</span></label>
+        <input type="email" class="form-control" formControlName="lastName"
+          [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }">
+        <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+          <small class="text-danger" class="form-text ">Last Name is required field</small>
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6 col-lg-6 col-sm-12 form-group">
+        <label>Phone <span class="required">*</span></label>
+        <input type="email" class="form-control" formControlName="phone"
+          [ngClass]="{ 'is-invalid': submitted && f.phone.errors }">
+        <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
+          <small class="text-danger" *ngIf="f.phone.errors.required" class="form-text ">Phone is required field</small>
+          <small class="text-danger" *ngIf="f.phone.errors.pattern" class="form-text ">Please, enter 10 digit Phone Number</small>
+        </div>
+      </div>
+      <div class="col-md-1 col-lg-2 col-sm-12 form-group">
+        <label>Exit</label>
+        <input type="email" class="form-control" >
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6 col-lg-6 col-sm-12 form-group">
+        <label>Email <span class="required">*</span></label>
+        <input type="email" class="form-control" formControlName="email"
+          [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+          <small *ngIf="f.email.errors.required">Email is required</small>
+          <small *ngIf="f.email.errors.email">Email must be a valid email address</small>
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-12 col-lg-12 col-sm-12">
+        <button type="submit" class=" btn btn-success mt-3 float-right" > 
+          Next</button>
+      </div>
+    </div>
+  </form>
+
+</div> -->
+
+
+
+
+<router-outlet></router-outlet>
